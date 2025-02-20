@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Link from "next/link"; // Importing Link for navigation
 import "../styles/globals.css";
 
 const Home = () => {
@@ -44,7 +45,7 @@ const Home = () => {
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600 transition"
             >
-              Get Started
+              <Link href="/auth">Get Started</Link> {/* Using Link to navigate */}
             </motion.button>
           </motion.div>
 

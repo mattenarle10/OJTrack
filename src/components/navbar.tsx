@@ -1,3 +1,4 @@
+// Navbar Component
 'use client';
 
 import Image from 'next/image';
@@ -34,7 +35,7 @@ const navChildVariants: Variants = {
   },
 };
 
-const Nav = () => {
+const Navbar = () => {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
   const navLinks = [
@@ -99,4 +100,5 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;
+
